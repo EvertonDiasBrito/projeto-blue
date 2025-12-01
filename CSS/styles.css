@@ -23,25 +23,28 @@
         z-index: 3;
     }
 
-    .logo {
+    header .logo {
         font-family: "Orbitron", sans-serif;
         font-size: 3rem;
         font-weight: 900;
         text-shadow: 0 0 10px rgb(0, 247, 255, 1);
     }
 
-    header nav ul {
-        display: flex;
-        gap: 45px;
-    }
 
-    header nav ul li {
+    header nav ul li  {
+        display: inline-block;
+        margin: 0  40px;
         cursor: pointer;
         position: relative;
         padding: 5px 0;
+        
     }
-
-    header nav ul li::after {
+    header nav ul li  a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    header nav ul li a::after {
         content: "";
         position: absolute;
         left: 0;
@@ -52,7 +55,7 @@
         transition: width 0.5s ease;
     }
 
-    header nav ul li:hover::after {
+    header nav ul li a:hover::after {
         width: 100%;
     }
 
